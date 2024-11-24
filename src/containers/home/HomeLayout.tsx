@@ -59,6 +59,12 @@ const HomeLayout = () => {
                 <InterviewSettingsForm handleTab={handlePage} />
               </TabPanel>
             </TabPanels>
+
+            <DisplayCard
+            requisitionDetails={state.requisitionDetails}
+            jobDetails={state.jobDetails}
+            interviewSettings={state.interviewSettings}
+            />
           </Grid>
         </Tabs>
       </Container>
